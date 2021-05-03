@@ -1,0 +1,27 @@
+{
+  "name": "data_mining_kmutnb_final",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^5.2.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thititongumpun/data_mining_kmutnb_final.git"
+  },
+  "author": "thiti.t",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thititongumpun/data_mining_kmutnb_final/issues"
+  },
+  "homepage": "https://github.com/thititongumpun/data_mining_kmutnb_final#readme"
+}

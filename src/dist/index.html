@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <div class="container p-5 pt-5 pb-5" id="text-wrapper" style="width:75%">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-xl-9 col-sm-12">
+                            <input type="text" class="p-3" id="output" placeholder="Loading app..." />
+                        </div>
+                        <div class="col-xl-3 col-sm-12">
+                            <button class="btn-hover color-10" id="clear-canvas">CLEAR</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="input-wrapper">
+                    <canvas id="input-canvas" width="28" height="28"></canvas>
+                </div>
+                <div class="card1">
+                    <div class="row px-3 mt-3 mb-3">
+                        <div class="col-8"></div>
+                        <div class="col-4">
+                            <div class="range ">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-5 mb-5 p-5" id="canvas-wrapper">
+                            <div id="drawing-mode-options">
+                                <span class="info">30</span><input type="range" value="30" min="5" max="100" id="drawing-line-width">
+                            </div>
+                            <canvas id="handwriting"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fabric@2.7.0/dist/fabric.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.2/dist/tf.min.js"></script>
+    <script src="../js/model.js"></script>
+    <script src="main.39af6c8ecafa36dfef0b.bundle.js"></script>
+    <!-- <script src="vendor.7041e8cdbd7a46a646e0.bundle.js"></script> -->
+    <!-- <script src="../js/index.js"></script> -->
+</body>
+
+</html>
