@@ -1,5 +1,4 @@
 import "../css/style.css";
-
 class Handwriting {
 	constructor() {
 
@@ -23,7 +22,7 @@ class Handwriting {
 	resetCanvas(removeText = true) {
 
     this.canvas.clear();
-    this.canvas.backgroundColor = "#ECF5EB";
+    this.canvas.backgroundColor = "#D24D57";
 
 		if(removeText) {
       this.outputEl.value = "";
