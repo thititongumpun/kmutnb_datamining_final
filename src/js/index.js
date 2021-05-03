@@ -1,5 +1,4 @@
 import "../css/style.css";
-
 class Handwriting {
 	constructor() {
 
@@ -23,7 +22,7 @@ class Handwriting {
 	resetCanvas(removeText = true) {
 
     this.canvas.clear();
-    this.canvas.backgroundColor = "#ECF5EB";
+    this.canvas.backgroundColor = "#D24D57";
 
 		if(removeText) {
       this.outputEl.value = "";
@@ -119,7 +118,7 @@ class Model {
 
 	loadModel() {
     console.time("Load model");
-    return tf.loadLayersModel("../dist/model/model.json").then(model => {
+    return tf.loadLayersModel("../model/model.json").then(model => {
       this._model = model;
       console.timeEnd("Load model")
     });
