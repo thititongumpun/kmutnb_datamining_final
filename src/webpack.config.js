@@ -9,15 +9,12 @@ module.exports = {
   output: {
     filename: '[name].[contenthash].bundle.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      }
+    ]
+  }
 };
-
-// module.exports = {
-//   module: {
-//     rules: [
-//       {
-//         test: /\.css$/i,
-//         use: ["style-loader", "css-loader"],
-//       },
-//     ],
-//   },
-// };
