@@ -1,6 +1,5 @@
 import "../css/style.css";
 
-
 class Handwriting {
 	constructor() {
 

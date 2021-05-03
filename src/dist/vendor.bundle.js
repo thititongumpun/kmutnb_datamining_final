@@ -9,7 +9,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/Model.js":
+/***/ "../model/model.json":
 /*!*********************!*\
   !*** ./js/Model.js ***!
   \*********************/

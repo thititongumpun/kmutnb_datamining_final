@@ -7,7 +7,8 @@ module.exports = {
   },
   mode: 'development',
   output: {
-    filename: '[name].[contenthash].bundle.js',
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].bundle.js',
   },
   module: {
     rules: [
@@ -16,5 +17,5 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       }
     ]
-  }
+  },
 };
