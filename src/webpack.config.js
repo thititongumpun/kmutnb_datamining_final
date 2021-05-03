@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = {
   entry: {
     main: './js/index.js',
-    vendor: './js/Model.js',
   },
   mode: 'development',
   output: {
