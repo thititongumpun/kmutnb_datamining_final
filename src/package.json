@@ -3,22 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "npx webpack serve"
+    "build": "webpack --config webpack.prod.js",
+    "start": "npx webpack serve --config webpack.dev.js --open"
   },
   "repository": {
     "type": "git",

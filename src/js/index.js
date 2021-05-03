@@ -120,7 +120,7 @@ class Model {
     console.time("Load model");
     return tf.loadLayersModel("../model/model.json").then(model => {
       this._model = model;
-      console.timeEnd("Load model")
+			console.timeEnd("Load model")
     });
 	};
 
@@ -131,7 +131,7 @@ class Model {
     console.time("Warmup");
     this._model.predict(tf.randomNormal([1, 28, 28, 1])).as1D().dataSync();
 		this.isWarmedUp = true;
-    console.timeEnd("Warmup");
+		console.timeEnd("Warmup");
   };
 
 	preprocessImage(pixelData) {
@@ -205,7 +205,7 @@ class Model {
     tensor = tensor.dataSync();
     console.log("Tensor name", name, tensor);
 		for(let i = 0; i<width*height; i+=width) {
-      console.log(tensor.slice(i, i + width).reduce((acc, cur) => acc + ((cur === 0 ? "0" : "1") + "").padStart(2)), "");
+			console.log(tensor.slice(i, i + width).reduce((acc, cur) => acc + ((cur === 0 ? "0" : "1") + "").padStart(2)), "");
 		}
 	}
 }
