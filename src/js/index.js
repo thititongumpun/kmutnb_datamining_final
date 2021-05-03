@@ -122,7 +122,7 @@ class Model {
       this._model = model;
       console.timeEnd("Load model")
     });
-  };
+	};
 
 	/**
 	 * Runs a prediction with random data to warm up the GPU
