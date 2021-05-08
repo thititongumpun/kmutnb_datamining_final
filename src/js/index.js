@@ -33,7 +33,7 @@ class Handwriting {
 	resizeCanvas() {
 
     this.canvas.setDimensions({
-      width: window.innerWidth - 900,
+      width: window.innerWidth - 650,
       height: window.innerHeight - 500
     });
     this.canvas.calcOffset();
